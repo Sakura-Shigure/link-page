@@ -9,7 +9,8 @@
 
   /* You can change the background color by typing the color code. (If you do not enter a background-image image, the background-color will be active.) */
   --background_color: #000;
-  --background_image: url("../img/wallpaper.png");
+  /* --background_image: url("../img/wallpaper.jpg"); */
+  --background_image: url();
 
   /* You can change the frame thickness and color of the picture by typing the number of pixels and the color code. */
   --image_border_color: #1f232e;
@@ -20,8 +21,8 @@
   --image_height: 140px;
 
   /* You can change the colors of the title and description section by typing the color codes. */
-  --title_color: #fff;
-  --description_color: #fff;
+  --title_color: #fdc5cf;
+  --description_color: #c9914c;
 
   /* You can change the colors of social media icons by changing the color code. */
   --svg_color: #fff;
@@ -31,10 +32,17 @@
   --menu_text_color: #fff;
   --menu_active_text_color: #d7e04f;
 
+  /* You can change the menu title button's background, text color and active color by changing the color codes. */
+  --button_menu_text_color: #c1b2ed;
+  
   /* You can change the button's background, text color and active color by changing the color codes. */
   --button_background_color: #1d1e24;
-  --button_text_color: #fff;
+  --button_text_color: #6dd4f9;
   --button_text_hover_color: #d7e04f;
+
+  /* You can change the small button's background, text color and active color by changing the color codes. */
+  --button_small_text_color: #fff4ec;
+  --button_small_text_hover_color: #d7e04f;
 
   /* You can change the background, text color and active color of the text field by changing the color codes. */
   --textarea_background_color: #1d1e24;
@@ -43,7 +51,7 @@
 
   /* You can change the background, text color and active color of the footer area by changing the color codes. */
   --footer_background_color: #1d1e24;
-  --footer_text_color: #fff;
+  --footer_text_color: #cbcbcb;
   --footer_link_text_color: #d7e04f;
 }
 
@@ -105,7 +113,7 @@ body {
 
 .header_text h2 {
   color: var(--description_color);
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /* Social Media Icons Codes */
@@ -182,7 +190,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--button_text_color);
+  color: var(--button_menu_text_color);
   background-color: var(--button_background_color);
   width: 41em;
   margin-top: 1em;
@@ -216,15 +224,14 @@ main {
   margin-left: 10px;
 }
 
-.main_small_button_item:hover,
-.main_button_item:hover {
+.main_small_button_item:hover{
   color: var(--button_text_hover_color);
   transform: scale(1.02);
   transition: 0.10s ease;
 }
 
 .main_small_button_item {
-  color: var(--button_text_color);
+  color: var(--button_small_text_color);
   background-color: var(--button_background_color);
   width: calc(41em / 2 - 5px);
   border-radius: 1em;
