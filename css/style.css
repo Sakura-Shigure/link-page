@@ -269,3 +269,7 @@ main {
     width: 92vw;
   }
 }
+
+.bi {
+  padding-right: 0.5rem;
+}
